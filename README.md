@@ -2,6 +2,9 @@
 
 This project was built as a template for hair salons that need a website built.
 
+**preview of project**
+![gif of hairsalon site](../../../Desktop/hairsalon-layout.gif)
+
 It uses placeholder images to generate random images within the fashion category.
 
 **Link to project:** (https://lucent-lokum-c227e6.netlify.app/)
