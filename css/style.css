@@ -1,0 +1,282 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+width: 100%;
+background: orange;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav a{
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style: none;
+  margin-top: 1%;
+  font-variant: all-small-caps;
+  font-size: 1.2rem;
+}
+.logo{
+  position: relative;
+  top: -.5rem;
+}
+/* main */
+main{
+  background-image: url(https://api.lorem.space/image/fashion?h=1000&hash=1iqagpmo);
+  height: 42rem;
+  padding: 4rem 0 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* blonde and highlight font */
+main h1{
+  font-size: 4rem;
+  margin: 4rem 0 0 0;
+}
+main p, .tagline, .sale, .lookbook{
+  font-variant: all-small-caps;
+}
+/* heading and tagline color */
+main h1, .tagline{
+  color: white;
+  font-weight: normal;
+}
+/* tagline  */
+.tagline{
+  font-size: 1.5rem;
+  padding: 0 0 1rem 0;
+}
+/* white side border on box */
+.white{
+  border-left: 4px solid white;
+  margin-left: -1.5rem;
+  height: 3rem;
+  padding: 1.3rem 0 0 1.5rem;
+}
+/* black button services */
+.black-button{
+  width: 7%;
+  background: black;
+  color: white;
+  padding: 1rem;
+  font-variant: all-small-caps;
+  text-decoration: none;
+}
+/* discount box */
+.first-visit{
+  margin-top: 2rem;
+  width: 12%;
+  height: 40%;
+  background: black;
+  color: white;
+  padding: 1.5rem;
+}
+/* percent off discount */
+.percent{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+/* black box text*/
+.sale{
+  font-size: 1rem;
+  margin: 0 0 1.5rem 0;
+}
+/* book online white button */
+.white-button{
+  color:black;
+  text-decoration: none;
+  background: white;
+  padding: 0.5rem 1rem;
+  font-variant: all-small-caps;
+}
+/* services icons */
+.icon{
+  height: 100px;
+  width: 100px;
+}
+/* services container */
+.services{
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 6rem;
+}
+/* services items */
+.service-1, .service-2, .service-3{
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  align-items: center;
+  padding: 0 8rem;
+}
+/* container holding both left and right sections */
+.momentum{
+  display: flex;
+  align-items: center;
+  margin: 0 6rem;
+  background: coral;
+}
+.left1{
+  height: 19rem;
+  width: 100%;
+  margin: 0rem 6rem 0 6rem;
+  padding: 4rem 4rem;
+}
+/* both containers within momentum section */
+.left1, .right1{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+/* left section h2 */
+.left1 h2{
+  font-size: 3rem;
+  font-variant: small-caps;
+}
+.left1 h2, .left1 p{
+  margin: 0 0 1rem 0;
+}
+/* read more button */
+.readMore{
+  width: 16%;
+}
+.stylists{
+  display: flex;
+  justify-content: space-between;
+  margin: 8rem 6rem;
+}
+.stylist-button{
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  bottom: 2rem;
+}
+.offer-container{
+  background-image: url(https://api.lorem.space/image/fashion?w=2000&h=450&hash=28lac4ak);
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8rem 6rem;
+}
+.sale-container{
+  margin: 12rem;
+}
+.offer{
+  width: 20rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.appt-button{
+  width: 10%
+}
+#lookbook{
+  height: 50rem;
+  margin: 0 0 6rem 0;
+}
+.lookbook{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 6rem 0 0 0;
+}
+.lookbook-border{
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 4rem 0;
+}
+/* lookbook photo grid */
+.lookbook-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  height: 40rem;
+  width: 40rem;
+  margin: 0 auto;
+}
+
+#img-0{
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+#img-1{
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 2;
+}
+#img-2{
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+#img-3{
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 3;
+}
+#img-4{
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-column-end: 4;
+}
+#img-5{
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 4;
+  grid-column-end: 4;
+}
+/* font awesome icons */
+.fa-bag-shopping, .fa-magnifying-glass{
+  color: black;
+  font-size: 1rem;
+}
+a:hover{
+  color: aqua;
+  cursor: pointer;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
