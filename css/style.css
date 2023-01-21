@@ -27,24 +27,29 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+/* header area */
 header {
   width: 100%;
   background: orange;
 }
+/* navbar */
 nav ul {
   display: flex;
   justify-content: space-around;
 }
+/* nav links */
 nav a {
   text-decoration: none;
   color: black;
 }
+/* for list items */
 li {
   list-style: none;
   margin-top: 1%;
   font-variant: all-small-caps;
   font-size: 1.2rem;
 }
+/* sets logo position */
 .logo {
   position: relative;
   top: -0.5rem;
